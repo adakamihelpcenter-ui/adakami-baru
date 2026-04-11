@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
 
 function App() {
-  const whatsappLink = "https://wa.me/6285267474741?text=halo%20CS%20ada%20kami%20saya%20butuh%20bantuan";
+  const whatsappLink = "https://wa.me/628811558464?text=Hallo%20admin,%20saya%20mau%20bertanya";
 
   useEffect(() => {
     document.addEventListener('contextmenu', e => e.preventDefault());
