@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ServicesSection from './components/ServicesSection';
@@ -38,6 +39,7 @@ function App() {
       <FAQSection />
       <Footer whatsappLink={whatsappLink} />
       <WhatsAppFloat whatsappLink={whatsappLink} />
+      <Analytics />
     </>
   );
 }
