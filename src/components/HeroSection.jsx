@@ -19,8 +19,8 @@ const HeroSection = ({ whatsappLink }) => {
             className="block hover:scale-105 transition-transform duration-300"
           >
             <img
-              src="/adakamilogo.jpg"
-              alt="Logo Utama"
+              src="/helpcenter-logo.jpg"
+              alt="Logo Pusat Bantuan"
               className="h-32 md:h-48 lg:h-60 object-contain drop-shadow-2xl"
               loading="lazy"
             />
@@ -28,21 +28,21 @@ const HeroSection = ({ whatsappLink }) => {
         </div>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight tracking-tight">
-          Pusat Informasi <br />
+          Pusat Bantuan <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-adakami-green">
-            Adakami
+            Pelanggan
           </span>
         </h1>
 
         <p className="text-lg md:text-xl mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-          Platform resmi untuk panduan prosedural, penyelesaian kendala operasional, dan informasi administratif yang aman, cepat, serta profesional.
+          Platform dukungan independen untuk panduan sistem, edukasi pengguna, dan penyelesaian kendala teknis yang aman, cepat, dan profesional.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
             <button className="w-full sm:w-auto bg-adakami-green hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-green-900/50 flex items-center justify-center gap-3 transition-all hover:-translate-y-1">
               <MessageSquareText />
-              Konsultasi Sekarang
+              Ajukan Pertanyaan
             </button>
           </a>
           <a href="#layanan" className="w-full sm:w-auto">
