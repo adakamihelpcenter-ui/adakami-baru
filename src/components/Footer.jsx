@@ -11,8 +11,8 @@ const Footer = ({ whatsappLink }) => {
               className="inline-block"
             >
               <img
-                src="/helpcenter-logo.ico"
-                alt="Logo Pusat Bantuan"
+                src="/adakamilogo.ico"
+                alt="Logo Footer"
                 className="h-10 opacity-70 mb-6 grayscale hover:grayscale-0 transition-all"
               />
             </a>
@@ -30,19 +30,16 @@ const Footer = ({ whatsappLink }) => {
             </ul>
           </div>
           <div>
-            <h4 className="text-white font-bold mb-4">Disclaimer Penting</h4>
+            <h4 className="text-white font-bold mb-4">Penting</h4>
             <p className="text-xs text-gray-400 leading-relaxed p-4 glass-card rounded-lg">
-              Pusat bantuan ini adalah platform dukungan teknis independen. Kami tidak menyelenggarakan layanan keuangan, tidak memproses transaksi finansial, dan tidak memiliki afiliasi langsung dengan produk apa pun.
+              Website ini berfokus pada layanan pelanggan (Customer Service). Kami tidak melayani atau memproses pengajuan transaksi keuangan apa pun di luar panduan aplikasi.
             </p>
           </div>
         </div>
 
         <div className="text-center text-xs border-t border-white/10 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>© 2026 Pusat Bantuan Pelanggan. Hak cipta dilindungi.</p>
-          <div className="space-x-4">
-            <a href="/privacy" className="hover:text-adakami-green transition">Privasi</a>
-            <a href="/terms" className="hover:text-adakami-green transition">Syarat & Ketentuan</a>
-          </div>
+          <p>© 2026 Pusat Bantuan Informasi. Hak cipta dilindungi.</p>
+          <p>Terhubung dan Melayani Sepenuh Hati.</p>
         </div>
       </div>
     </footer>

@@ -29,25 +29,25 @@ const ServicesSection = ({ whatsappLink }) => {
     {
       icon: ShieldCheck,
       title: "Informasi Akun",
-      description: "Bantuan verifikasi status akun dan penyelesaian kendala akses ke sistem.",
+      description: "Bantuan pengecekan status administrasi dan penyelesaian kendala akses sistem.",
       delay: "0.1s"
     },
     {
       icon: Headset,
-      title: "Dukungan Teknis",
-      description: "Panduan lengkap jika Anda mengalami kesulitan navigasi pada aplikasi atau website.",
+      title: "Bantuan Teknis",
+      description: "Panduan operasional jika Anda mengalami kesulitan navigasi pada aplikasi atau web.",
       delay: "0.2s"
     },
     {
       icon: FileText,
-      title: "Panduan Penggunaan",
-      description: "Edukasi dan penjelasan tahapan penggunaan sistem sesuai prosedur standar.",
+      title: "Panduan Sistem",
+      description: "Edukasi tahapan penggunaan layanan sesuai dengan prosedur yang berlaku.",
       delay: "0.3s"
     },
     {
       icon: MessagesSquare,
-      title: "Laporan & Masukan",
-      description: "Saluran terbuka untuk saran, masukan, dan laporan kendala yang diproses secara rahasia.",
+      title: "Layanan Keluhan",
+      description: "Penerimaan saran, masukan, maupun laporan kendala secara langsung dan rahasia.",
       delay: "0.4s"
     }
   ];
@@ -56,9 +56,9 @@ const ServicesSection = ({ whatsappLink }) => {
     <section id="layanan" className="py-24 bg-adakami-darker relative" ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16 reveal-item">
-          <h2 className="text-sm font-bold tracking-widest text-adakami-green uppercase mb-3">Layanan Dukungan</h2>
-          <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">Apa yang Kami Sediakan</h3>
-          <p className="text-gray-400 max-w-2xl mx-auto">Layanan dukungan komprehensif untuk memastikan kenyamanan Anda dalam menggunakan sistem dan memahami prosedur operasional dengan baik.</p>
+          <h2 className="text-sm font-bold tracking-widest text-adakami-green uppercase mb-3">Layanan Kami</h2>
+          <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">Solusi Kebutuhan Anda</h3>
+          <p className="text-gray-400 max-w-2xl mx-auto">Kami menyediakan berbagai layanan bantuan untuk memastikan kenyamanan dan keamanan Anda dalam menggunakan sistem kami.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
