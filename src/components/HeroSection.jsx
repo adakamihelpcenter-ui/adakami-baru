@@ -19,7 +19,7 @@ const HeroSection = ({ whatsappLink }) => {
             className="block hover:scale-105 transition-transform duration-300"
           >
             <img
-              src="/helpcenter-logo.ico"
+              src="/adakamilogo.ico"
               alt="Logo Pusat Bantuan"
               className="h-32 md:h-48 lg:h-60 object-contain drop-shadow-2xl"
               loading="lazy"
