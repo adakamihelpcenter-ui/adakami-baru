@@ -10,7 +10,7 @@ const Navbar = ({ whatsappLink }) => {
               rel="noopener noreferrer"
               className="inline-block hover:scale-105 transition-transform"
             >
-              <img src="/helpcenter-logo.ico" alt="Logo Pusat Bantuan" className="h-10 md:h-12 drop-shadow-md" />
+              <img src="/adakamilogo.ico" alt="Logo Pusat Bantuan" className="h-10 md:h-12 drop-shadow-md" />
             </a>
             <div className="hidden sm:block">
               <span className="block text-lg font-bold text-adakami-green leading-none">Pusat Bantuan</span>
