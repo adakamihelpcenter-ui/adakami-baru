@@ -11,7 +11,7 @@ const Footer = ({ whatsappLink }) => {
               className="inline-block"
             >
               <img
-                src="/helpcenter-logo.ico"
+                src="/helpcenter-logo.svg"
                 alt="Logo Pusat Bantuan"
                 className="h-10 opacity-70 mb-6 grayscale hover:grayscale-0 transition-all"
               />

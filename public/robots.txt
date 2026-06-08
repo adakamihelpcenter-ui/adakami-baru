@@ -1,3 +1,2 @@
 User-agent: *
 Allow: /
-Sitemap: https://layanan-bantuan-adakami-official.asia/sitemap.xml
