@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
 
 function App() {
-  const whatsappLink = "https://wa.me/628217825630?text=Hallo%20admin,%20saya%20mau%20bertanya";
+  const whatsappLink = "https://wa.me/628217506899?text=Hallo%20admin,%20saya%20mau%20bertanya";
 
   return (
     <>
