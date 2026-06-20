@@ -1,4 +1,10 @@
+import { trackWhatsAppClick } from '../utils/gtag';
+
 const Navbar = ({ whatsappLink }) => {
+  const handleClick = () => {
+    trackWhatsAppClick();
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 glass-card bg-adakami-darker/80 shadow-lg z-50 animate-fade-in-up">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -8,6 +14,7 @@ const Navbar = ({ whatsappLink }) => {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleClick}
               className="inline-block hover:scale-105 transition-transform"
             >
               <img src="/adakamilogo.ico" alt="Logo Pusat Bantuan" className="h-10 md:h-12 drop-shadow-md" />

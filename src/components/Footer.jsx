@@ -1,4 +1,10 @@
+import { trackWhatsAppClick } from '../utils/gtag';
+
 const Footer = ({ whatsappLink }) => {
+  const handleClick = () => {
+    trackWhatsAppClick();
+  };
+
   return (
     <footer className="bg-[#050c0a] text-gray-500 py-16 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6">
@@ -8,6 +14,7 @@ const Footer = ({ whatsappLink }) => {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleClick}
               className="inline-block"
             >
               <img

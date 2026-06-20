@@ -1,6 +1,10 @@
 import { MessageSquareText, ArrowDown } from 'lucide-react';
+import { trackWhatsAppClick } from '../utils/gtag';
 
 const HeroSection = ({ whatsappLink }) => {
+  const handleClick = () => {
+    trackWhatsAppClick();
+  };
   return (
     <section id="beranda" className="hero-bg pt-32 pb-20 min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-adakami-darker"></div>
@@ -16,6 +20,7 @@ const HeroSection = ({ whatsappLink }) => {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={handleClick}
             className="block hover:scale-105 transition-transform duration-300"
           >
             <img
@@ -39,7 +44,7 @@ const HeroSection = ({ whatsappLink }) => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer" onClick={handleClick} className="w-full sm:w-auto">
             <button className="w-full sm:w-auto bg-adakami-green hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-green-900/50 flex items-center justify-center gap-3 transition-all hover:-translate-y-1">
               <MessageSquareText />
               Ajukan Pertanyaan

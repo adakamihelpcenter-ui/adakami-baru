@@ -1,7 +1,11 @@
 import { useEffect, useRef } from 'react';
 import { ShieldCheck, Headset, FileText, MessagesSquare } from 'lucide-react';
+import { trackWhatsAppClick } from '../utils/gtag';
 
 const ServicesSection = ({ whatsappLink }) => {
+  const handleClick = () => {
+    trackWhatsAppClick();
+  };
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -70,6 +74,7 @@ const ServicesSection = ({ whatsappLink }) => {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={handleClick}
                 className="reveal-item service-card glass-card p-8 rounded-2xl block group cursor-pointer"
                 style={{ animationDelay: service.delay }}
               >
