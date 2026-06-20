@@ -4,20 +4,26 @@ const Terms = () => {
       <div className="max-w-4xl mx-auto px-6">
         <h1 className="text-4xl font-bold mb-8 text-adakami-green">Syarat dan Ketentuan</h1>
 
+        <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4 mb-8">
+          <p className="text-yellow-400 text-sm font-medium">
+            Peringatan Penting: Platform ini adalah layanan edukasi dan informasi teknologi independen. Kami bukan layanan resmi dari brand, aplikasi, atau produk tertentu. Tidak ada afiliasi, kemitraan, atau hubungan resmi dengan pihak ketiga mana pun.
+          </p>
+        </div>
+
         <div className="space-y-6 text-gray-300">
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">1. Penerimaan Syarat</h2>
-            <p>Dengan mengakses dan menggunakan Pusat Bantuan Pelanggan, Anda menerima dan setuju untuk terikat oleh syarat dan ketentuan berikut.</p>
+            <p>Dengan mengakses dan menggunakan platform Pusat Bantuan ini, Anda menerima dan setuju untuk terikat oleh syarat dan ketentuan berikut.</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">2. Sifat Layanan</h2>
-            <p>Pusat Bantuan Pelanggan adalah platform dukungan teknis independen. Kami tidak menyelenggarakan layanan keuangan, tidak memproses transaksi finansial, dan tidak memiliki afiliasi langsung dengan produk apa pun. Layanan kami terbatas pada:</p>
+            <p>Pusat Bantuan ini adalah platform edukasi dan informasi teknologi independen. Kami tidak menyelenggarakan layanan keuangan, tidak memproses transaksi finansial, tidak menyediakan pinjaman, dan tidak memiliki afiliasi langsung dengan produk, aplikasi, atau brand apa pun. Layanan kami terbatas pada:</p>
             <ul className="list-disc list-inside mt-2 space-y-2">
-              <li>Panduan sistem dan edukasi pengguna</li>
-              <li>Dukungan teknis dan troubleshooting</li>
-              <li>Penyelesaian kendala operasional</li>
-              <li>Penerimaan saran dan laporan masalah</li>
+              <li>Edukasi dan panduan penggunaan sistem digital</li>
+              <li>Informasi umum seputar teknologi</li>
+              <li>Konsultasi teknis non-komersial</li>
+              <li>Penerimaan saran dan masukan komunitas</li>
             </ul>
           </section>
 
@@ -37,15 +43,15 @@ const Terms = () => {
             <p>Anda bertanggung jawab atas:</p>
             <ul className="list-disc list-inside mt-2 space-y-2">
               <li>Keakuratan informasi yang Anda berikan</li>
-              <li>Menjaga kerahasiaan kredensial akun Anda</li>
-              <li>Semua aktivitas yang terjadi di akun Anda</li>
+              <li>Menjaga kerahasiaan data pribadi Anda</li>
+              <li>Semua aktivitas yang terjadi selama menggunakan layanan</li>
               <li>Kepatuhan terhadap semua hukum yang berlaku</li>
             </ul>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">5. Batasan Tanggung Jawab</h2>
-            <p>Pusat Bantuan Pelanggan disediakan "sebagaimana adanya" tanpa jaminan apa pun. Kami tidak bertanggung jawab atas kerugian langsung, tidak langsung, atau konsekuensial yang timbul dari penggunaan layanan kami.</p>
+            <p>Pusat Bantuan ini disediakan "sebagaimana adanya" tanpa jaminan apa pun. Kami tidak bertanggung jawab atas kerugian langsung, tidak langsung, atau konsekuensial yang timbul dari penggunaan layanan kami. Informasi yang kami berikan bersifat edukatif dan tidak menggantikan saran profesional.</p>
           </section>
 
           <section>
@@ -65,7 +71,7 @@ const Terms = () => {
 
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">9. Kontak</h2>
-            <p>Untuk pertanyaan mengenai syarat dan ketentuan ini, silakan hubungi kami melalui saluran dukungan yang tersedia.</p>
+            <p>Untuk pertanyaan mengenai syarat dan ketentuan ini, silakan hubungi kami melalui saluran komunikasi yang tersedia di platform.</p>
           </section>
 
           <div className="mt-12 pt-6 border-t border-white/10 text-sm text-gray-400">

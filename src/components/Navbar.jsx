@@ -21,7 +21,7 @@ const Navbar = ({ whatsappLink }) => {
             </a>
             <div className="hidden sm:block">
               <span className="block text-lg font-bold text-adakami-green leading-none">Pusat Bantuan</span>
-              <span className="block text-xs text-gray-400 mt-1">Dukungan Pelanggan 24 Jam</span>
+              <span className="block text-[10px] text-gray-500 mt-0.5 uppercase tracking-wider">Layanan Independen • Bukan Layanan Resmi</span>
             </div>
           </div>
           <div className="hidden md:flex gap-8 text-sm font-semibold tracking-wide text-gray-300">
