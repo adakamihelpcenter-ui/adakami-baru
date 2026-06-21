@@ -37,18 +37,23 @@ const Footer = ({ whatsappLink }) => {
             </ul>
           </div>
           <div>
-            <h4 className="text-white font-bold mb-4">Disclaimer Penting</h4>
+            <h4 className="text-white font-bold mb-4">Informasi</h4>
             <p className="text-xs text-gray-400 leading-relaxed p-4 glass-card rounded-lg">
-              Pusat bantuan ini adalah platform dukungan teknis independen. Kami tidak menyelenggarakan layanan keuangan, tidak memproses transaksi finansial, dan tidak memiliki afiliasi langsung dengan produk apa pun.
+              Layanan ini berfokus pada edukasi, panduan sistem, dan dukungan teknis umum untuk pengguna.
             </p>
           </div>
         </div>
 
-        <div className="text-center text-xs border-t border-white/10 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>© 2026 Pusat Bantuan Pelanggan. Hak cipta dilindungi.</p>
-          <div className="space-x-4">
-            <a href="/privacy" className="hover:text-adakami-green transition">Privasi</a>
-            <a href="/terms" className="hover:text-adakami-green transition">Syarat & Ketentuan</a>
+        <div className="text-center border-t border-white/10 pt-8 mt-8">
+          <p className="mx-auto mb-6 max-w-3xl rounded-lg border border-yellow-500/20 bg-yellow-500/10 px-4 py-3 text-xs font-medium leading-relaxed text-yellow-300">
+            Disclaimer: Kami adalah platform dukungan teknis independen. Bukan layanan resmi dari brand atau produk tertentu.
+          </p>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+            <p>© 2026 Pusat Bantuan Pelanggan. Hak cipta dilindungi.</p>
+            <div className="space-x-4">
+              <a href="/privacy" className="hover:text-adakami-green transition">Privasi</a>
+              <a href="/terms" className="hover:text-adakami-green transition">Syarat & Ketentuan</a>
+            </div>
           </div>
         </div>
       </div>

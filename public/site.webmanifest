@@ -1,0 +1,17 @@
+{
+  "name": "Pusat Bantuan Pelanggan",
+  "short_name": "Pusat Bantuan",
+  "description": "Pusat layanan informasi dan bantuan pelanggan 24 jam yang independen.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f241e",
+  "theme_color": "#209247",
+  "icons": [
+    {
+      "src": "/adakamilogo.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

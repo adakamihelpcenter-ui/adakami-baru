@@ -15,11 +15,6 @@ const HeroSection = ({ whatsappLink }) => {
           Layanan Aktif 24 Jam
         </div>
 
-        <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg px-4 py-2 mb-8 max-w-2xl mx-auto">
-          <p className="text-yellow-400 text-xs md:text-sm font-medium">
-            Disclaimer: Kami adalah platform dukungan teknis independen. Bukan layanan resmi dari brand atau produk tertentu.
-          </p>
-        </div>
 
         <div className="flex justify-center mb-8">
           <a
