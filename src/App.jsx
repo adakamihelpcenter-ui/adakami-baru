@@ -6,8 +6,10 @@ import WorkflowSection from './components/WorkflowSection';
 import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
+import CookieConsent from './components/CookieConsent';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
+import { trackPageView, trackScrollDepth } from './utils/analytics';
 
 const SITE_URL = 'https://adakamihelpcenter-ui.vercel.app';
 
@@ -46,6 +48,7 @@ function App() {
   const currentMeta = pageMeta[pathname] || pageMeta['/'];
   const canonicalUrl = `${SITE_URL}${pathname === '/' ? '/' : pathname}`;
 
+  // Track page view on mount and pathname change
   useEffect(() => {
     document.title = currentMeta.title;
     setMetaContent('meta[name="description"]', currentMeta.description);
@@ -55,7 +58,52 @@ function App() {
     setMetaContent('meta[name="twitter:title"]', currentMeta.title);
     setMetaContent('meta[name="twitter:description"]', currentMeta.description);
     setCanonicalUrl(canonicalUrl);
-  }, [canonicalUrl, currentMeta.description, currentMeta.title]);
+
+    // Track page view
+    trackPageView(pathname, currentMeta.title);
+  }, [canonicalUrl, currentMeta.description, currentMeta.title, pathname]);
+
+  // Track scroll depth
+  useEffect(() => {
+    let scrollTimeout;
+    const handleScroll = () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        const scrollTop = window.scrollY;
+        const scrollPercentage = Math.round(
+          ((scrollTop + windowHeight) / documentHeight) * 100
+        );
+
+        // Track at 25%, 50%, 75%, 100%
+        if (
+          scrollPercentage >= 25 &&
+          scrollPercentage < 50
+        ) {
+          trackScrollDepth(25);
+        } else if (
+          scrollPercentage >= 50 &&
+          scrollPercentage < 75
+        ) {
+          trackScrollDepth(50);
+        } else if (
+          scrollPercentage >= 75 &&
+          scrollPercentage < 100
+        ) {
+          trackScrollDepth(75);
+        } else if (scrollPercentage >= 100) {
+          trackScrollDepth(100);
+        }
+      }, 500);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      clearTimeout(scrollTimeout);
+    };
+  }, []);
 
   const renderPage = () => {
     if (pathname === '/privacy') {
@@ -82,6 +130,7 @@ function App() {
       <main>{renderPage()}</main>
       <Footer whatsappLink={whatsappLink} />
       <WhatsAppFloat whatsappLink={whatsappLink} />
+      <CookieConsent />
     </>
   );
 }
