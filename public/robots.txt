@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adakamihelpcenter-ui.vercel.app/sitemap.xml
+Sitemap: https://www.layanan-bantuan-adakami-official.asia/sitemap.xml
