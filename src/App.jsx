@@ -9,7 +9,7 @@ import WhatsAppFloat from './components/WhatsAppFloat';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 
-const SITE_URL = 'https://adakamihelpcenter-ui.vercel.app';
+const SITE_URL = 'https://www.layanan-bantuan-adakami-official.asia';
 
 const pageMeta = {
   '/': {
